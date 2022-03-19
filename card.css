@@ -1,0 +1,64 @@
+:root {
+    --text-color: rgba(248, 248, 248, 1);
+    --text-scnd-color: rgba(165, 165, 165, 1);
+    --text-channeling-color: rgba(217, 136, 61, 1);
+    --bg-sidebar-color: #242424;
+    --bg-main-color: rgba(41, 41, 41, 1);
+    --bg-card-color: rgba(50, 50, 50, 1);
+    --text-hover-color: rgb(230, 130, 36);
+    --title-sidebar-color: rgba(164, 166, 180, 1);
+    --border-color: rgba(104, 108, 130, 1);
+}
+
+.modal-header {
+    background-image: url('/img/bg-modal.png');
+    border: 0;
+}
+
+.modal-content {
+    border: 0;
+}
+
+.modal-title {
+    color: var(--text-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.modal-nama {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+}
+
+.line {
+    height: 1px;
+    border-radius: 2px;
+    background-color: var(--text-scnd-color);
+    margin: 1rem 4rem;
+}
+
+.total_gaji {
+    text-align: center;
+}
+
+.total_gaji h1,
+.total_gaji h6 {
+    margin-bottom: 0;
+}
+
+.d-flex h6 {
+    margin-left: -0.05rem;
+}
+
+.modal-up {
+    margin-top: 2rem;
+    margin-top: 2rem;
+}
+
+.modal-down {
+    margin-bottom: 1.8rem;
+    margin-top: 1.7rem;
+}

@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+    --text-color: rgba(248, 248, 248, 1);
+    --text-scnd-color: rgba(165, 165, 165, 1);
+    --text-channeling-color: rgba(217, 136, 61, 1);
+    --bg-sidebar-color: #242424;
+    --bg-main-color: rgba(41, 41, 41, 1);
+    --bg-card-color: rgba(50, 50, 50, 1);
+    --text-hover-color: rgb(230, 130, 36);
+    --title-sidebar-color: rgba(164, 166, 180, 1);
+    --border-color: rgba(104, 108, 130, 1);
+}
+
+* {
+    font-family: 'nunito', sans-serif;
+}
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin: 0;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background-color: #e9e9e9;
+    /* border-radius: 8px; */
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #7a7a7a;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #575757;
+}
+
+
+/* LOGIN */
+
+.Login_side {
+    display: flex;
+    flex-direction: row;
+    color: var(--bg-main-color);
+    background-color: var(--text-color);
+}
+
+.Login_left,
+.Login_right {
+    flex: 50%;
+    height: 100%;
+}
+
+.Login_left {
+    background-image: url('/img/employeee\ \(2\).png');
+    background: #F6EECA;
+    padding: 5.5rem 0;
+}
+
+.Password,
+.form-check,
+.Login_btn,
+.Login_password h6,
+.Login_img,
+.Login_title,
+.Login_desc {
+    width: 100%;
+    min-height: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login_title {
+    font-weight: bold;
+    margin-bottom: 2.5rem;
+    font-size: 26px;
+}
+
+.Login_signup {
+    position: absolute;
+    top: 35px;
+    margin-left: 4.75rem;
+}
+
+.Login_signup a {
+    text-decoration: none;
+    color: var(--text-channeling-color);
+}
+
+.form-check a {
+    color: var(--text-channeling-color);
+}
+
+.Login_password {
+    display: block;
+    width: 80%;
+    margin: 0;
+}
+
+.Login_left,
+.Login_right {
+    width: 100%;
+    min-height: 90%;
+    margin: auto;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login_desc {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.Login_desc h4,
+.Login_desc h1 {
+    font-weight: bold !important;
+}
+
+
+/*  */
+
+.Password {
+    display: flex;
+    margin: 0;
+}
+
+.Password_all {
+    position: relative;
+    width: 350px;
+}
+
+.Password_input {
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    padding: 10px 55px 10px 20px;
+    outline: none;
+    color: var(--bg-main-color);
+    font-weight: 500;
+    border: 2px solid var(--bg-card-color);
+    background-color: var(--text-color);
+}
+
+select::-ms-expand {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.selectdiv {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+    float: left;
+}
+
+
+/* IE11 hide native button (thanks Matt!) */
+
+select::-ms-expand {
+    display: none;
+}
+
+.selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 18px;
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    pointer-events: none;
+}
+
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 12px;
+    padding: 10px 0 10px 20px;
+    outline: none;
+    color: var(--bg-main-color);
+    font-weight: 500;
+    border: 2px solid var(--bg-card-color);
+    background-color: var(--text-color);
+    cursor: pointer;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+.Password_input::placeholder {
+    font-size: small;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5500s ease-in-out 0s;
+    -webkit-text-fill-color: rgba(41, 41, 41, 1) !important;
+    -webkit-box-shadow: 0 0 0 50px var(--text-color) inset;
+}
+
+.Password_eye {
+    font-size: 25px;
+    position: absolute;
+    color: var(--text-scnd-color);
+    top: 10px;
+    right: 15px;
+}
+
+.Password_title {
+    font-size: small !important;
+    font-weight: 600 !important;
+    color: var(--bg-main-color) !important;
+    background-color: var(--text-color);
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    padding: 0 7px;
+    border-radius: 8px;
+}
+
+.Password_btn {
+    width: 350px;
+    margin: 1.5rem 0;
+    border: 0;
+    background-color: var(--text-channeling-color);
+    color: var(--text-color);
+    font-size: small;
+    font-weight: bolder;
+    padding: 0.75rem 0;
+    border-radius: 5px;
+}
+
+.Password_btn:hover {
+    background-color: var(--text-hover-color);
+}
+
+.form-check label {
+    margin-right: 5rem;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-check a {
+    margin-left: 5rem;
+    font-size: 12px;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 935px) {
+    .Login_side {
+        flex-direction: column;
+    }
+    .Login_left,
+    .Login_right {
+        flex: 100%;
+    }
+    .Login_right,
+    .Regis_left {
+        background-image: url('/img/bg_mobile.png');
+    }
+    .Login_left {
+        display: none;
+    }
+    .Password_input::placeholder {
+        font-size: 15px;
+    }
+    .Password_eye {
+        top: 13px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .Login_signup {
+        position: absolute;
+        top: 35px;
+        margin-left: 0;
+    }
+}
+
+
+/* MOBILE */
+
+@media only screen and (min-height: 530px) {
+    .Box_img,
+    .Login_password {
+        margin: 9rem 0;
+    }
+}
+
+@media only screen and (min-height: 630px) {
+    .Box_img,
+    .Login_password {
+        margin: 12rem 0;
+    }
+}
+
+@media only screen and (min-height: 730px) {
+    .Box_img,
+    .Login_password {
+        margin: 15rem 0;
+    }
+}
+
+@media only screen and (min-height: 780px) {
+    .Box_img,
+    .Login_password {
+        margin: 16.5rem 0;
+    }
+}
+
+@media only screen and (min-height: 830px) {
+    .Box_img,
+    .Login_password {
+        margin: 18rem 0;
+    }
+}
+
+@media only screen and (min-height: 870px) {
+    .Box_img,
+    .Login_password {
+        margin: 21rem 0;
+    }
+}
+
+@media only screen and (min-height: 970px) {
+    .Box_img,
+    .Login_password {
+        margin: 25rem 0;
+    }
+}
+
+@media only screen and (min-height: 1100px) {
+    .Box_img,
+    .Login_password {
+        margin: 33rem 0;
+    }
+}

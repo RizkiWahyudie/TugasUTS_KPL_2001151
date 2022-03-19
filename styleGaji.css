@@ -301,6 +301,21 @@ input:-webkit-autofill:active {
         top: 35px;
         margin-left: 0;
     }
+    .form-check a {
+        margin-left: 0;
+    }
+    .Login_title {
+        font-size: 20px;
+    }
+    .modal-body h6 {
+        font-size: small;
+    }
+    .modal-body h5 {
+        font-size: medium;
+    }
+    .modal-nama {
+        font-size: 23px !important;
+    }
 }
 
 
